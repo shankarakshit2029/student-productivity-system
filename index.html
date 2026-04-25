@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Productivity System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>📚 Student Productivity System</h1>
+  </header>
+
+  <!-- TOP 3 FOCUS -->
+  <section>
+    <h2>🎯 Top 3 Focus</h2>
+    <input id="focus1" placeholder="Focus 1">
+    <input id="focus2" placeholder="Focus 2">
+    <input id="focus3" placeholder="Focus 3">
+  </section>
+
+  <!-- TASKS -->
+  <section>
+    <h2>📌 Tasks</h2>
+
+    <input id="taskInput" placeholder="Task name">
+    <input id="dueDate" type="date">
+    <select id="subject">
+      <option>Math</option>
+      <option>Science</option>
+      <option>English</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- GRADES -->
+  <section>
+    <h2>📊 Grades</h2>
+
+    <input id="gradeInput" placeholder="Enter score">
+    <button onclick="addGrade()">Add Grade</button>
+
+    <p id="averageDisplay"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
